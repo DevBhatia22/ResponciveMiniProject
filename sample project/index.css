@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #720455;
+}
+img{
+    width: 100%;
+}
+.nav{
+    padding: 0 10px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(1px);
+    background-color: rgba(60, 7, 83, 0.2);
+    /* background-color: #3D3B40;    */
+}
+.content{
+    /* width: 400px; */
+    display: flex;
+    gap: 20px;
+}
+.links{
+    text-decoration: none;
+}
+.more{
+    display: none;
+}
+.first{
+    background-image: url("imgs/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vw;
+}
+.first img{
+    width: 40vw;
+    border-radius: 5px;
+}
+.discription{
+    width: 50%
+}
+.img{
+    height: 50vh;
+    width: 100%;
+    background-image: url(imgs/imgmain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.bg2{
+    background-image: url(imgs/bg2.jpg);
+}
+.bg3{
+    background-image: url(imgs/bg3.jpg);
+}
+.bg4{
+    background-image: url(imgs/bg4.jpg);
+}
+.bg5{
+    background-image: url(imgs/bg5.jpg);
+}
+.bg5 img{
+    height: 80vh;
+    object-fit: cover;
+}
+.second{
+    background-image: url("https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg");
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+@media screen and (max-width: 480px){
+    .more{
+        display: block;
+    }
+    .links{
+        display: none;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .first img{
+        width: 80vw;
+        border-radius: 5px;
+    }
+    .bg5 img{
+        height: 40vh;
+    }
+    .discription{
+        width: 80%;
+    }
+    *{
+        font-size: 1rem;
+    }
+}
